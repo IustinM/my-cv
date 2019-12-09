@@ -1,0 +1,16 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+
+
+    //values in calc() explained
+    //12 px -> minimum font size
+    // 24 - 12 -> (max font size - min font size)
+    // 100 vmin -> the smaller value of the width and the height of viewpoint
+    // 400px -> min screen size
+    // 800 - 400 -> max screen size - min screen size
+    // chech it out : https://www.smashingmagazine.com/2015/05/fluid-typography/
+    font-size: calc(12px+(24-12)*((100vmin - 400px)/(800 - 400)));
+}
