@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'lunca2';
+  src:
+    url('asset/font/lunca2.ttf?h45hq6') format('truetype'),
+    url('asset/font/lunca2.woff?h45hq6') format('woff'),
+    url('asset/font/lunca2.svg?h45hq6#lunca2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="lunca2__icon--"], [class*=" lunca2__icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lunca2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lunca2__icon--home:before {
+  content: "\e900";
+}
+.lunca2__icon--map2:before {
+  content: "\e94c";
+}
+.lunca2__icon--calendar:before {
+  content: "\e953";
+}
+.lunca2__icon--hammer:before {
+  content: "\e996";
+}
+.lunca2__icon--trophy:before {
+  content: "\e99e";
+}
+.lunca2__icon--briefcase:before {
+  content: "\e9ae";
+}
+.lunca2__icon--airplane:before {
+  content: "\e9af";
+}
+.lunca2__icon--menu3:before {
+  content: "\e9bf";
+}
+.lunca2__icon--earth:before {
+  content: "\e9ca";
+}
+.lunca2__icon--wondering:before {
+  content: "\e9fb";
+}
+.lunca2__icon--plus:before {
+  content: "\ea0a";
+}
+.lunca2__icon--info:before {
+  content: "\ea0c";
+}
+.lunca2__icon--google-plus2:before {
+  content: "\ea8c";
+}
+.lunca2__icon--facebook2:before {
+  content: "\ea91";
+}
+.lunca2__icon--twitter:before {
+  content: "\ea96";
+}
+.lunca2__icon--youtube:before {
+  content: "\ea9d";
+}
+.lunca2__icon--github:before {
+  content: "\eab0";
+}
+.lunca2__icon--skype:before {
+  content: "\eac5";
+}
+.lunca2__icon--linkedin:before {
+  content: "\eac9";
+}
+.lunca2__icon--stackoverflow:before {
+  content: "\ead0";
+}
+.lunca2__icon--file-word:before {
+  content: "\eae1";
+}
+.lunca2__icon--html-five:before {
+  content: "\eae4";
+}
