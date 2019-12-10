@@ -1,0 +1,28 @@
+-
+  var myFullName ='Iustin Morosanu'
+  var myJobTitle ="golan"
+  var socialList = [
+      
+      {icon: 'google-plus2', url:'https://plus.google.com/iustinmorosanu'},
+      {icon: 'facebook2', url:'https://facebook.com/iustinmorosanu'},
+      {icon: 'twitter', url:'https://twitter.com/iustinmorosanu'},
+      {icon: 'youtube', url:'https://youtube.com/iustinmorosanu'},
+      {icon: 'github', url:'https://githiub.com/iustinmorosanu'},
+      {icon: 'stackoverflow', url:'https://stackoverflor.com/iustinmorosanu'},
+      {icon: 'skype', url:'https://skype.com/iustinmorosanu'},
+      {icon: 'linkedin', url:'https://linkedin.com/iustinmorosanu'},
+      {icon: 'earth', url:'https://bitbee.uk.com/iustinmorosanu'},
+
+  ]
+
+#landing-page
+.landing-page
+  .landing-page__wrapper
+        h1.landing-page__name=myFullName
+        h2.landing-page__title=myJobTitle
+        ul.landing-page__social
+          each social in socialList
+            li.landing-page__item
+                label.landing-page__label(for="")
+                span(class=`lunca2__icon--${social.icon}`)
+
