@@ -1,0 +1,48 @@
+//- data comes here
+-
+  var  header = ' #about me'
+  var imagePath ="asset/image/iustinmorosanu-avatar.jpg"
+  var myFullName = "Iustin Morosanu"
+  var myTitle = "golan"
+  var slogan =`nu calca in lunca ca te rup`
+  var achievement ={
+      title:'LUNCA',
+      content:'Sunt loveaua sunt baiatu'
+  }
+  var coolStuff = {
+      title:'ttt',
+      buttonList: [
+          { 
+              url:'https://github.com/IustinM',
+              icon:'github',
+              label:'Click to download the GitHub project source'
+          }, { 
+              url:'https://github.com/IustinM',
+              icon:'file-word',
+              label:'Click to download the GitHub project source'
+          }, { 
+              url:'https://github.com/IustinM',
+              icon:'file-word',
+              label:'Click to visit the GitHub project source'
+          }
+     ]
+  }
+
+//-the view comes here
+#about-me 
+.about-me  
+    .about-me__header=header
+    .about-me__avatar-wrapper
+      img.about-me__avatar(src=imagePath )
+    .about-me__full-name=myFullName
+    .about-me__full-title=myTitle
+    .about-me__slogan= slogan
+
+    .about-me__title=achievement.title
+    .about-me__content=achievement.content
+
+
+    each button in coolStuff.buttonList
+         a(href=button.url)
+            span=button.label
+            span(class=`.lunca2__icon--${button.icon}`)
