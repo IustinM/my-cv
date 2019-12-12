@@ -3,14 +3,14 @@
   var  header = ' #about me'
   var imagePath ="asset/image/iustinmorosanu-avatar.jpg"
   var myFullName = "Iustin Morosanu"
-  var myTitle = "golan"
-  var slogan =`nu calca in lunca ca te rup`
+  var myTitle = "Warrior"
+  var slogan =`Never give up`
   var achievement ={
       title:'LUNCA',
-      content:'Sunt loveaua sunt baiatu'
+      content:'I like to make very difficult websites and program in c++,because that s my passion :)'
   }
   var coolStuff = {
-      title:'ttt',
+      title:'grab cool stuff',
       buttonList: [
           { 
               url:'https://github.com/IustinM',
@@ -19,11 +19,11 @@
           }, { 
               url:'https://github.com/IustinM',
               icon:'file-word',
-              label:'Click to download the GitHub project source'
+              label:'Click to download the file'
           }, { 
               url:'https://github.com/IustinM',
               icon:'file-word',
-              label:'Click to visit the GitHub project source'
+              label:'Click to download the file'
           }
      ]
   }
@@ -35,14 +35,16 @@
     .about-me__avatar-wrapper
       img.about-me__avatar(src=imagePath )
     .about-me__full-name=myFullName
-    .about-me__full-title=myTitle
+    .about-me__title=myTitle
     .about-me__slogan= slogan
 
     .about-me__title=achievement.title
     .about-me__content=achievement.content
 
-
-    each button in coolStuff.buttonList
-         a(href=button.url)
-            span=button.label
-            span(class=`.lunca2__icon--${button.icon}`)
+    .about-me__title=coolStuff.title
+    .about-me__link-list
+    
+        each button in coolStuff.buttonList
+            a.about-me__link(href=button.url)
+                span.about-me__link-description=button.label
+                span(class=`lunca2__icon--${button.icon}`)
