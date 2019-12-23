@@ -1,0 +1,34 @@
+-
+   var awardHeader ='#awards'
+   var awardList = [
+         {
+               title :'Cele mai tari evenimente',
+               description:'O scurta prezentare a ultimelor evenimente din viata mea',
+               location:'Lunca Pascani',
+               date:'18.08.2002',
+      }, {
+               title :'Cele mai mari premii',
+               description:'de alungul vietii mele am acaparat o gramada de premii',
+               location:'Iasi',
+               date:'2019',
+      }
+   ];
+#award
+.award  
+   .award__header=awardHeader
+   each award in awardList
+    .award__card
+
+      .award__icon
+         span.lunca2__icon--trophy
+      .award__title=award .title
+      .award__icon
+         span.lunca2__icon--info
+      .award__description=award .description
+      .award__icon
+         span.lunca2__icon--map2
+      .award__location=award .location
+      .award__icon
+         span.lunca2__icon--calendar
+      .award__date=award .date
+    
